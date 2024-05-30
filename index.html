@@ -10,7 +10,6 @@
       background-color: #FED766;
       /* yellow */
       color: #333;
-      /* changed text color to a dark gray */
       font-family: 'Times New Roman', Times, serif, sans-serif;
       margin: 0;
       padding: 0;
@@ -18,7 +17,6 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      height */
     }
 
     #container {
@@ -47,7 +45,7 @@
       text-decoration: none;
       color: #333;
       display: inline-block;
-      transition: color 0.3s ease;/
+      transition: color 0.3s ease;
     }
 
     a:hover {
@@ -71,16 +69,29 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    .bio {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
   </style>
 </head>
 
 <body>
   <div id="container">
     <h1>My Profile</h1>
-    <img
-      src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/412393837_902797568220215_7152426569000194755_n.jpg?stp=c48.81.196.196a_dst-jpg_p320x320&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=IrmlSyN15cAQ7kNvgFR49Yy&_nc_ht=scontent-sjc3-1.xx&oh=00_AYAkaG-K8TkyZVz-rUhVJbxgdJb7F4ylXbbCkpS5aKsHaw&oe=665DDDD5"
+    <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/412393837_902797568220215_7152426569000194755_n.jpg?stp=c48.81.196.196a_dst-jpg_p320x320&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=IrmlSyN15cAQ7kNvgFR49Yy&_nc_ht=scontent-sjc3-1.xx&oh=00_AYAkaG-K8TkyZVz-rUhVJbxgdJb7F4ylXbbCkpS5aKsHaw&oe=665DDDD5"
       alt="Profile Picture" id="profile-pic">
-    <p>Welcome to my profile page!</p>
+    <p class="bio">Hi, my name is Arvindh, and I am a graduating senior class of 2024. Below are the ways you can contact me!</p>
     <ul>
       <li><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"
           alt="Email Icon" class="social-icon"><a href="mailto:parvindh06@gmail.com">Email</a></li>
